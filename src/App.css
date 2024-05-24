@@ -1,38 +1,369 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  /* background: -webkit-linear-gradient(330deg, #b8f5fd,#fff2c4);       
+background: linear-gradient(330deg,#b8f5fd,#fff2c4); */
+/* background-color: #fff5a9; */
+background-color: #e3fbff;
+}
+strong {
+  color: #10717e;
+}
+nav {
+  background-color: #62cddb;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Categorias li {
+  padding: 20px;
+  border-radius: 10px;
+}
+nav ul li {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  border-radius: 10px;
+}
+nav ul li a {
   color: white;
+  text-decoration: none;
+  font-size: 14pt;
+}
+nav ul li:hover {
+  background-color: #FFD741;
+}
+nav ul li:hover a{
+  color:#10717e
 }
 
-.App-link {
-  color: #61dafb;
+
+nav ul li a.active {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul .logo {
+  width: 70px;
+  padding: 0px;
+  border-radius: 0;
+  margin: 2px;
+}
+
+.CV {
+  border: 2px solid white;
+  border-radius: 5px;
+  /* margin: 20px; */
+  padding: 10px; 
+  font-size: 16pt;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+nav ul .CV:hover {
+  background-color: #FFD741;
+  color:#10717e;
+}
+
+.whats {
+  padding: 5px 10px;
+  height: 40px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.noBorde {
+  border-width: 0px;
+}
+.logo{
+  margin: 5px;
+}
+
+footer {
+  background-color: #62cddb;
+  color: white;
+  padding: 25px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.Pie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.TextoPie {
+  margin: 0 30px;
+}
+.TextoPie p{
+  text-align: left;
+  padding: 3px;
+}
+.TextoPie h3{
+  text-align: left;
+  padding-bottom: 5px;
+}
+.logo_pie {
+  width: 150px;
+}
+
+.License {
+  font-size: 10pt;
+  display: block;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2ea4b4;
+  margin: 25px 0;
+}
+
+h3 {
+  text-align: left;
+  color: #2ea4b4;
+  margin: 25px 0;
+}
+p{
+  text-align: center;
+
+}
+
+
+.Intro {
+  width: 60%;
+  text-align: justify;
+  margin: auto;
+  font-size: 13pt;
+}
+
+.Muestras {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.MiniMuestras a {
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+.MiniMuestras {
+  position: relative;
+  width: 360px;
+  height: 250px;
+  overflow: hidden; /* Para evitar desbordamientos al escalar */
+  border-radius: 10px;
+  margin: 15px 0;
+  transition: transform 0.3s ease; /* Añadimos transform a la transición */
+}
+
+.TituloMuestra {
+  color: white;
+  font-size: 16pt;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Transición de opacidad */
+  z-index: 2; /* Asegura que el título esté encima de la imagen */
+}
+
+.ImagenMuestra {
+  background-color: #FFD741;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #10717e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: filter 0.3s ease; /* Transición solo para el filtro de desenfoque */
+  z-index: 1; /* Asegura que la imagen esté debajo del título */
+}
+
+.MiniMuestras:hover .TituloMuestra {
+  opacity: 1; /* Hacemos visible el título al hacer hover */
+}
+
+.MiniMuestras:hover .ImagenMuestra {
+  filter: blur(10px); /* Aumentamos el desenfoque al hacer hover */
+}
+
+
+.datosContacto {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 60%;
+  margin: 40px auto;
+  color: #10717e;
+  font-size: large;
+  font-weight: lighter;
+}
+
+.datosContacto p {
+  margin: auto;
+  width: 60%;
+  line-height: 25pt;
+
+}
+
+.form {
+  display: block;
+  text-align: left;
+  width: 60%;
+  margin: auto;
+  color: #2ea4b4;
+  font-size: large;
+  font-weight: bold;
+}
+.form input, .form textarea {
+  height: 50px;
+  border: 2px solid #62cddb;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  border: 0px;
+  outline: 3px solid #FFD741; }
+
+.NomTel {
+  display: flex;
+justify-content: space-between;
+  width: 100%;
+}
+
+.NomTel input {
+  width: 98%;
+}
+
+.Mensaje textarea{
+  width: 100%;
+  height: 200px;
+  resize: vertical;
+}
+
+input::placeholder, textarea::placeholder {
+  color:#62cddb;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-style: italic;
+}
+
+.PadreForm {
+  display: flex;
+  width: 60%;
+  margin: auto;
+}
+
+.form button {
+  background-color: #10717e;
+  margin-top: 10px;
+  border-radius: 30px;
+  padding: 15px;
+  color: white;
+  border: 0;
+  font-size: 16pt;
+ float: right;
+ transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form button:hover{
+  background-color: #FFD741;
+  color:#10717e;
+}
+
+hr{
+  color:#10717e;
+}
+.CVContacto {
+  text-align: center;
+}
+.Curriculum {
+  background-color: #10717e;
+  margin-top: 10px;
+  border-radius: 30px;
+  padding: 15px;
+  color: white;
+  font-size: 14pt;
+  text-decoration: none;
+  margin: auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.Curriculum:hover{
+  background-color: #FFD741;
+  color:#10717e;
+}
+
+.ContactDirect {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto 20px auto;
+  padding: 0 40px;
+  width: 80%;
+}
+
+.ContactDirect img{
+  background-color: #2ea4b4;
+  padding: 5px;
+  border-radius: 10px;
+  width: 50px;
+}
+
+.ContactDetails {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.ContactDetails p, .ContactDetails h3{
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+.ContactDetails p {
+font-size: 15px;
+}
+
+.QuienSoy {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.QuienSoy p {
+  text-align: justify;
+}
+
+.QuienSoy img {
+  width: 350px;
+  float: right;
+  margin: 0 30px;
 }

@@ -1,0 +1,61 @@
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import logo from '../assets/LogoTereMalacitana.png';
+import playa from '../assets/playa.jpg';
+
+const Home = () => {
+  return (
+    <div>
+      <Helmet>
+        <title>Tere Ávila</title>
+        <meta name="description" content="Bienvenido a mi portafolio. Aquí puedes encontrar ejemplos de mi trabajo en diseño web, ilustración editorial y cultural." />
+      </Helmet>
+
+      <h1>Soy Tere, ¡bienvenido a mi portfolio!</h1>
+      <p className='Intro'> Aquí podrás ver distintas muestras de mi trabajo, tanto de <strong>Diseño y Desarrollo de Páginas Web</strong>, como ilustración, estando por un lado <strong>Ilustraciones Editoriales</strong>, y por otro las <strong>Ilustraciones Culturales</strong>, en las que incluyo tanto ilustraciones referentes a mi ciudad, Málaga y su cultura, como a la naturaleza entre otras diversas temáticas.</p><br />
+      <div className='Muestras'>
+        <div className='MiniMuestras'>
+          <Link to="/diseno-desarrollo-web">
+            <div className='TituloMuestra'>Diseño y Desarrollo Web</div>
+            <div className='ImagenMuestra'><img src={playa} alt="img ejemplo"/></div>
+          </Link>
+        </div>
+        <div className='MiniMuestras'>
+          <Link to="/ilustracion-editorial">
+            <div className='TituloMuestra'>Ilustración editorial</div>
+            <div className='ImagenMuestra'><img src={playa} alt="img ejemplo"/></div>
+          </Link>
+        </div>
+        <div className='MiniMuestras'>
+          <Link to="/ilustracion-cultural">
+            <div className='TituloMuestra'>Ilustración cultural</div>
+            <div className='ImagenMuestra'><img src={playa} alt="img ejemplo"/></div>
+          </Link>
+        </div>
+      </div>
+      <h2>¿Quién soy?</h2>
+      <div className='QuienSoy'>
+      
+    
+      <div className='QuienText'>
+      <h3>¡Mi nombre es Tere Ávila!</h3>
+      <p>
+        Desde siempre me ha gustado el arte, así que decidí estudiar <strong>Bellas Artes</strong> y más tarde el <strong>Ciclo Superior de Ilustración</strong>, que me ha servido para especializarme aún más. También llevo desde 2018 realizando encargos de ilustraciones personalizadas en distintos estilos. Ah, y también escribí y dibujé mi propio libro: <strong><em>"El Tridente Bajo Las Olas"</em></strong>.<br/><br/>
+        Gracias a estos estudios y a formaciones complementarias, domino el uso de distintas técnicas tanto de dibujo <em>(acuarelas, rotuladores, grafitos, tinta o medios digitales como Photoshop, Paint Tool SAI, Procreate...)</em> como de pintura <em>(acrílico, gouache y óleo)</em>.<br/><br/>
+        Mi pasión por el arte y el haber descubierto el mundo de la programación me llevaron a descubrir el <strong>Front End</strong>, en el que puedo combinar ambas cosas. <br/><br/>
+        Eso me llevó a estudiar el <strong>Certificado de Profesionalidad en Confección y Publicación de Páginas Web</strong>, que junto con diversos cursos complementarios me han servido para ampliar conocimientos en distintos lenguajes de programación. <br/><br/>
+      </p>
+      </div>
+      <img src={logo} alt="logo"/>
+      </div>
+      <h2>¿Quieres un encargo?</h2>
+      <p>
+        Texto de muestra. <br />Texto de muestra.<br /> Texto de muestra. <br />Texto de muestra. <br />Texto de muestra. <br />Texto de muestra. <br />
+        Texto de muestra. <br />Texto de muestra.<br /> Texto de muestra. <br />Texto de muestra. <br />Texto de muestra. <br />Texto de muestra.
+      </p>
+    </div>
+  );
+}
+
+export default Home;
