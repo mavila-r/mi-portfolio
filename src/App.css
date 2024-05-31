@@ -107,6 +107,11 @@ footer {
   align-items: center;
   
 }
+
+footer a {
+  /* text-decoration: none; */
+  color: white;
+}
 .TextoPie {
   margin: 0 30px;
 }
@@ -114,9 +119,10 @@ footer {
   text-align: left;
   padding: 3px;
 }
-.TextoPie h3{
+.TextoPie h2{
   text-align: left;
   padding-bottom: 5px;
+  color: white;
 }
 .logo_pie {
   width: 150px;
@@ -203,6 +209,10 @@ p{
   left: 0;
   transition: filter 0.3s ease; /* Transición solo para el filtro de desenfoque */
   z-index: 1; /* Asegura que la imagen esté debajo del título */
+}
+
+.Editorial {
+  height: 100%;
 }
 
 .MiniMuestras:hover .TituloMuestra {
@@ -365,5 +375,5 @@ font-size: 15px;
 .QuienSoy img {
   width: 350px;
   float: right;
-  margin: 0 30px;
+  margin: 0 0 0 30px;
 }

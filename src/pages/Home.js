@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import logo from '../assets/LogoTereMalacitana.png';
 import playa from '../assets/playa.jpg';
+import editorial from '../assets/Editorial/Dino1.jpg'
+import ImageCarousel from '../components/ImageCarousel';
 
 const Home = () => {
   return (
@@ -14,6 +16,7 @@ const Home = () => {
 
       <h1>Soy Tere, ¡bienvenido a mi portfolio!</h1>
       <p className='Intro'> Aquí podrás ver distintas muestras de mi trabajo, tanto de <strong>Diseño y Desarrollo de Páginas Web</strong>, como ilustración, estando por un lado <strong>Ilustraciones Editoriales</strong>, y por otro las <strong>Ilustraciones Culturales</strong>, en las que incluyo tanto ilustraciones referentes a mi ciudad, Málaga y su cultura, como a la naturaleza entre otras diversas temáticas.</p><br />
+      {/* <Slider /> */}
       <div className='Muestras'>
         <div className='MiniMuestras'>
           <Link to="/diseno-desarrollo-web">
@@ -24,7 +27,7 @@ const Home = () => {
         <div className='MiniMuestras'>
           <Link to="/ilustracion-editorial">
             <div className='TituloMuestra'>Ilustración editorial</div>
-            <div className='ImagenMuestra'><img src={playa} alt="img ejemplo"/></div>
+            <div className='ImagenMuestra'><img className="Editorial" src={editorial} alt="img ejemplo"/></div>
           </Link>
         </div>
         <div className='MiniMuestras'>
@@ -50,10 +53,9 @@ const Home = () => {
       <img src={logo} alt="logo"/>
       </div>
       <h2>¿Quieres un encargo?</h2>
-      <p>
-        Texto de muestra. <br />Texto de muestra.<br /> Texto de muestra. <br />Texto de muestra. <br />Texto de muestra. <br />Texto de muestra. <br />
-        Texto de muestra. <br />Texto de muestra.<br /> Texto de muestra. <br />Texto de muestra. <br />Texto de muestra. <br />Texto de muestra.
-      </p>
+      <p>Aquí tienes ejemplos de diferentes encargos que he realizado:</p>
+      <br/>
+      <ImageCarousel />
     </div>
   );
 }

@@ -43,7 +43,7 @@ function App() {
           </ul>
           <ul className='Redes'>
             
-              <a href="https://drive.google.com/file/d/1pm9qSizByC-iiYfpSB5goD8TIBLInSG6/view?usp=drive_link" target='blank' className="CV">CV</a>
+              <a href="https://drive.google.com/file/d/1-nkKJkwEmOkiqKO2XIIFpC6sxTKvNOYO/view?usp=sharing" target='blank' className="CV">CV</a>
             
 
             <li><a href="https://wa.me/34674766255" target='blank'><img className="whats" src={whats} alt="whatsapp" /></a></li>
@@ -68,10 +68,10 @@ function App() {
           <div className='Pie'>
             <img className="logo_pie" src={logo} alt="logo pie" />
             <div className='TextoPie'>
-              <h3>CONTACTO</h3>
+              <h2>CONTACTO</h2>
               <p>tavilarey@gmail.com</p>
               <p>+34 674766255</p>
-              <p>Carrd</p>
+              <p><a href="#">Carrd</a></p>
             </div>
           </div>
         </footer>

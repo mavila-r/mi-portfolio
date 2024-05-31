@@ -69,7 +69,7 @@ const DisenoDesarrolloWeb = () => {
       <div className='CVContacto'>
         <h2>¿QUIERES CONOCERME MEJOR?</h2>
         <br /><br />
-        <a className='Curriculum' href="https://drive.google.com/file/d/1pm9qSizByC-iiYfpSB5goD8TIBLInSG6/view?usp=drive_link" target='blank'>Aquí tienes mi Currículum</a>
+        <a className='Curriculum' href="https://drive.google.com/file/d/1-nkKJkwEmOkiqKO2XIIFpC6sxTKvNOYO/view?usp=sharing" target='blank'>Aquí tienes mi Currículum</a>
       </div>
     </div>
   );
