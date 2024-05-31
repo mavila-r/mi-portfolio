@@ -71,7 +71,6 @@ function App() {
               <h2>CONTACTO</h2>
               <p>tavilarey@gmail.com</p>
               <p>+34 674766255</p>
-              <p><a href="#">Carrd</a></p>
             </div>
           </div>
         </footer>
