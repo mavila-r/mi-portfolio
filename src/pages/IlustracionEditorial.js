@@ -31,7 +31,7 @@ const IlustracionEditorial = () => {
       </Helmet>
       <h2>Ilustración Editorial</h2>
       <p>
-      Texto introducción ilustración editorial
+      En esta página podrás ver ilustraciones dedicadas principalmente al mundo editorial, tanto portadas, como ilustraciones internas, incluyendo también en algunas el proceso de la ilustración.
       </p>
 <br />
       <ImageGallery images={images} />

@@ -5,6 +5,7 @@ import logo from '../assets/LogoTereMalacitana.png';
 import playa from '../assets/playa.jpg';
 import editorial from '../assets/Editorial/Dino1.jpg'
 import ImageCarousel from '../components/ImageCarousel';
+import tote from '../assets/Cultural/Tote.jpg'
 
 const Home = () => {
   return (
@@ -33,7 +34,7 @@ const Home = () => {
         <div className='MiniMuestras'>
           <Link to="/ilustracion-cultural">
             <div className='TituloMuestra'>Ilustración cultural</div>
-            <div className='ImagenMuestra'><img src={playa} alt="img ejemplo"/></div>
+            <div className='ImagenMuestra'><img className="Cultural" src={tote} alt="img ejemplo"/></div>
           </Link>
         </div>
       </div>
@@ -52,10 +53,10 @@ const Home = () => {
       </div>
       <img src={logo} alt="logo"/>
       </div>
-      <h2>¿Quieres un encargo?</h2>
+      {/* <h2>¿Quieres un encargo?</h2>
       <p>Aquí tienes ejemplos de diferentes encargos que he realizado:</p>
       <br/>
-      <ImageCarousel />
+      <ImageCarousel /> */}
     </div>
   );
 }

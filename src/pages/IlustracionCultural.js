@@ -29,9 +29,9 @@ const IlustracionCultural = () => {
       </Helmet>
       <h2>Ilustración Cultural</h2>
       <p>
-     Texto de introducción ilustración cultural
-
+      En esta página podrás ver diferentes ilustraciones cuya temática he decidido llamar <strong>cultural</strong>, ya que se centra en la ciudad de Málaga, sus paisajes y costumbres, pero también en otros elementos como la naturaleza.
       </p>
+      <br />
       <ImageGallery images={images}/>
     </div>
   );

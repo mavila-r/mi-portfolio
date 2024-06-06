@@ -23,7 +23,7 @@ function App() {
       <div>
         <nav>
           <ul>
-            <li>
+            <li className='logo1'>
               <NavLink to="/" activeClassName="active"><img className="logo" src={logo} alt="logo" /></NavLink>
             </li>
           </ul>
@@ -71,7 +71,6 @@ function App() {
               <h2>CONTACTO</h2>
               <p>tavilarey@gmail.com</p>
               <p>+34 674766255</p>
-              <p><a href="#">Carrd</a></p>
             </div>
           </div>
         </footer>
