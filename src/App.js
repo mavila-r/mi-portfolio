@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import logo from './assets/LogoTereMalacitana (1).png'; // Importa la imagen
 import whats from './assets/icons8-whatsapp-50 (1).png';
 // import gmail from './assets/icons8-gmail-64.png';

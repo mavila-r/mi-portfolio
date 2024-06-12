@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/LogoTereMalacitana.png';
 import playa from '../assets/playa.jpg';
 import editorial from '../assets/Editorial/Dino1.jpg'
-import ImageCarousel from '../components/ImageCarousel';
 import tote from '../assets/Cultural/Tote.jpg'
 
 const Home = () => {
