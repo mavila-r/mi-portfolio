@@ -28,14 +28,7 @@ const DisenoDesarrolloWeb = () => {
       <br/>
 
       <h3 className='h3centered'>Proyectos</h3>
-      <p>
-      Tutorial <br />
-      Aplicación <br />
-      Agencia Colocación? <br />
-      Proyectos Ficticios <br />
-      La mariquita roja Baby <br />
-
-      </p>
+      <h3 className='h3centered'>¡Oops! Aún estamos trabajando en esto, ¡vuelve pronto!</h3>
     </div>
   );
 }
