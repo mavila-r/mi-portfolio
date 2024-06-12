@@ -39,7 +39,7 @@ const DisenoDesarrolloWeb = () => {
       <div className='PadreForm'>
 
         <div className='form'>
-          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <form name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <p style={{ display: "none" }}>
               <label>No llenar este campo: <input name="bot-field" /></label>
