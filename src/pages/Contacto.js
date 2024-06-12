@@ -20,15 +20,15 @@ const DisenoDesarrolloWeb = () => {
           <div className='ContactDetails'>
             <img src={whatsapp} alt="whatsapp" />
             <div className='ContactText'>
-            <h3>Whatsapp</h3>
-            <p>+34674766255</p>
+              <h3>Whatsapp</h3>
+              <p>+34674766255</p>
             </div>
           </div>
           <div className='ContactDetails'>
             <img src={gmail} alt="gmail" />
             <div className='ContactText'>
-            <h3>Gmail</h3>
-            <p>tavilarey@gmail.com</p>
+              <h3>Gmail</h3>
+              <p>tavilarey@gmail.com</p>
             </div>
           </div>
         </div>
@@ -39,8 +39,11 @@ const DisenoDesarrolloWeb = () => {
       <div className='PadreForm'>
 
         <div className='form'>
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact" />
+            <p style={{ display: "none" }}>
+              <label>No llenar este campo: <input name="bot-field" /></label>
+            </p>
             <div className='NomTel'>
               <div className='Nombre'>
                 <label htmlFor="nombre">NOMBRE</label>
@@ -63,6 +66,7 @@ const DisenoDesarrolloWeb = () => {
             <button type="submit">Enviar</button>
           </form>
         </div>
+
 
       </div>
       <br /><br />
