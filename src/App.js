@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import logo from './assets/LogoTereMalacitana (1).png'; // Importa la imagen
 import whats from './assets/icons8-whatsapp-50 (1).png';
 // import gmail from './assets/icons8-gmail-64.png';
-import linkedin from './assets/icons8-linkedin-50.png';
+//import linkedin from './assets/icons8-linkedin-50.png';
 
 
 
