@@ -194,7 +194,7 @@ p {
 
 .MiniMuestras {
   position: relative;
-  width: 360px;
+  width: 450px;
   height: 250px;
   overflow: hidden;
   /* Para evitar desbordamientos al escalar */

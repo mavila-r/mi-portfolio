@@ -14,6 +14,8 @@ import Home from './pages/Home';
 import DisenoDesarrolloWeb from './pages/DisenoDesarrolloWeb';
 import IlustracionEditorial from './pages/IlustracionEditorial';
 import IlustracionCultural from './pages/IlustracionCultural';
+import PinturaClasica from './pages/PinturaClasica';
+import Videojuegos from './pages/Videojuegos';
 import Contacto from './pages/Contacto';
 
 function App() {
@@ -27,14 +29,20 @@ function App() {
             </li>
           </ul>
           <ul className='Categorias'>
-            <li>
+            {/* <li>
               <NavLink to="/diseno-desarrollo-web" activeClassName="active">Diseño y Desarrollo Web</NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/ilustracion-editorial" activeClassName="active">Ilustración Editorial</NavLink>
             </li>
             <li>
               <NavLink to="/ilustracion-cultural" activeClassName="active">Ilustración Cultural</NavLink>
+            </li>
+            <li>
+              <NavLink to="/pintura-clasica" activeClassName="active">Pintura Clásica</NavLink>
+            </li>
+            <li>
+              <NavLink to="/videojuegos" activeClassName="active">Videojuegos</NavLink>
             </li>
             <li>
               <NavLink to="/contacto" activeClassName="active">Contacto</NavLink>
@@ -47,7 +55,7 @@ function App() {
 
             <li><a href="https://wa.me/34674766255" target='blank'><img className="whats" src={whats} alt="whatsapp" /></a></li>
             {/* <li><a href="mailto:tavilarey@gmail.com" target='blank'><img className="whats" src={gmail} alt="gmail" /></a></li> */}
-            <li><a href="https://www.linkedin.com/in/tereavilarey/" target='blank'><img className="whats" src={linkedin} alt="linkedin" /></a></li>
+            {/* <li><a href="https://www.linkedin.com/in/tereavilarey/" target='blank'><img className="whats" src={linkedin} alt="linkedin" /></a></li> */}
           </ul>
         </nav>
 
@@ -56,6 +64,8 @@ function App() {
           <Route path="/diseno-desarrollo-web" element={<DisenoDesarrolloWeb />} />
           <Route path="/ilustracion-editorial" element={<IlustracionEditorial />} />
           <Route path="/ilustracion-cultural" element={<IlustracionCultural />} />
+          <Route path="/pintura-clasica" element={<PinturaClasica />} />
+          <Route path="/videojuegos" element={<Videojuegos />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
 

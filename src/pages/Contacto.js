@@ -28,7 +28,7 @@ const DisenoDesarrolloWeb = () => {
             <img src={gmail} alt="gmail" />
             <div className='ContactText'>
               <h3>Gmail</h3>
-              <p>tavilarey@gmail.com</p>
+              <p>teremalacitana@gmail.com</p>
             </div>
           </div>
         </div>
