@@ -314,7 +314,16 @@ p {
   /* Transición solo para el filtro de desenfoque */
   z-index: 1;
   /* Asegura que la imagen esté debajo del título */
+
 }
+
+/* .ImagenMuestra img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+} */
+
 
 .Editorial {
   height: 100%;
@@ -323,7 +332,6 @@ p {
 .Cultural {
   width: 100%;
   position: relative;
-  top: 30px;
 }
 
 .Pintura {
