@@ -145,10 +145,23 @@
 
 /* Responsive */
 @media (max-width: 600px) {
+  .overlay {
+    display: flex;
+    align-items: center;   /* Centra vertical */
+    justify-content: center; /* Centra horizontal */
+    height: 100vh; /* Asegura ocupar toda la pantalla */
+  }
+
   .modal {
-    width: 95vw;
-    max-width: none;
-    height: auto;
+    position: relative; /* Cambiar absolute a relative para que flex funcione */
+    top: auto;          /* Quitar el top 50% y transform */
+    left: auto;
+    transform: none;
+    max-width: 95vw;
+    max-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .modal-container img {
