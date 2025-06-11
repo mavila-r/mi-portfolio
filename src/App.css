@@ -7,20 +7,44 @@
 
 body {
   /* background: -webkit-linear-gradient(330deg, #b8f5fd,#fff2c4);       
-background: linear-gradient(330deg,#b8f5fd,#fff2c4); */
+  background: linear-gradient(330deg,#b8f5fd,#fff2c4); */
   /* background-color: #fff5a9; */
   background-color: #e3fbff;
+  padding-top: 0px;
+}
+
+html, body {
+  height: 100%; 
 }
 
 strong {
   color: #10717e;
 }
 
-nav {
+nav.navbar {
   background-color: #62cddb;
-  text-align: center;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 80px;
+}
+
+
+
+.nav-left img.logo {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+}
+
+.nav-center, .nav-right {
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
@@ -30,10 +54,37 @@ nav ul {
   justify-content: center;
 }
 
+.Categorias {
+  display: flex;
+  list-style: none;
+}
+
 .Categorias li {
   padding: 20px;
   border-radius: 10px;
 }
+
+.Categorias li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14pt;
+  transition: color 0.3s ease;
+}
+
+.Categorias li:hover {
+  background-color: #FFD741;
+  cursor: pointer;
+}
+
+.Categorias li:hover a {
+  color: #10717e;
+}
+
+.Categorias li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 
 nav ul li {
   transition: background-color 0.5s ease, color 0.5s ease;
@@ -82,7 +133,7 @@ nav ul .logo {
   text-decoration: none;
   color: white;
   transition: background-color 0.5s ease, color 0.5s ease;
-
+  
 }
 
 nav ul .CV:hover {
@@ -102,25 +153,25 @@ nav ul .CV:hover {
 }
 
 .logo {
-  margin: 5px;
+  width: 70px;
+  height: auto;
 }
 
 footer {
   background-color: #62cddb;
   color: white;
-  padding: 25px;
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0;
+  margin-top: 2rem; /* o el valor que prefieras */
 }
 
 .Pie {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-
+  gap: 1rem;
+  
 }
 
 footer a {
@@ -129,7 +180,10 @@ footer a {
 }
 
 .TextoPie {
-  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .TextoPie p {
@@ -144,7 +198,26 @@ footer a {
 }
 
 .logo_pie {
-  width: 150px;
+  width: 120px;
+  height: auto;
+}
+
+.icon-link {
+  color: white;
+  font-size: 1.8rem;
+  margin: 0 0.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .License {
@@ -168,7 +241,8 @@ h3 {
 
 p {
   text-align: center;
-
+  width: 80%;
+  margin: auto;
 }
 
 
@@ -252,6 +326,14 @@ p {
   top: 30px;
 }
 
+.Pintura {
+  width: 130%;
+}
+
+.Videojuegos {
+  height: 100%;
+  
+}
 .MiniMuestras:hover .TituloMuestra {
   opacity: 1;
   /* Hacemos visible el título al hacer hover */
@@ -268,18 +350,12 @@ p {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  width: 60%;
   margin: 40px auto;
-  color: #10717e;
-  font-size: large;
   font-weight: lighter;
 }
 
-.datosContacto p {
-  margin: auto;
-  width: 60%;
-  line-height: 25pt;
-
+.ContactDirect {
+  color: #10717e;
 }
 
 .form {
@@ -313,6 +389,11 @@ textarea:focus {
 
 .NomTel input {
   width: 98%;
+}
+
+.Nombre, .Telefono, .Email {
+  flex: 1;          /* que cada una ocupe igual espacio */
+  min-width: 0;     /* para evitar overflow */
 }
 
 .Mensaje textarea {
@@ -370,7 +451,7 @@ hr {
   text-decoration: none;
   margin: auto;
   transition: background-color 0.3s ease, color 0.3s ease;
-
+  
 }
 
 .Curriculum:hover {
@@ -380,10 +461,10 @@ hr {
 
 .ContactDirect {
   display: flex;
-  justify-content: space-around;
-  margin: 30px auto 20px auto;
-  padding: 0 40px;
-  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* espacio horizontal entre WhatsApp y Gmail */
+  margin-top: 20px;
 }
 
 .ContactDirect img {
@@ -395,8 +476,8 @@ hr {
 
 .ContactDetails {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px; /* espacio entre imagen y texto */
 }
 
 .ContactDetails p,
@@ -444,7 +525,7 @@ hr {
   justify-content: center;
   align-items: center;
   transition: background-color 0.5s ease;
-
+  
 }
 
 .SkillsImg:hover {
@@ -461,5 +542,168 @@ hr {
   height: 60%;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  
+}
 
+/*MENÚ PLEGABLE*/
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 10px;
+  z-index: 1100;
+}
+
+.menu-toggle span {
+  background: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+/* Responsive: ocultar menú centro y derecha, mostrar hamburguesa y menú móvil */
+@media (max-width: 1024px) {
+  
+  .Pintura {
+    width: 170%;
+  }
+  .nav-center,
+  .nav-right {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .ContactDirect {
+    flex-direction: column; /* bajan uno debajo del otro */
+    align-items: center; /* centra en horizontal cuando están en columna */
+    gap: 20px; /* espacio vertical cuando están apilados */
+  }
+  
+  .ContactDetails {
+    flex: none; /* para quitar la flex grow/shrink */
+    width: 100%; /* que ocupen el mismo ancho total */
+    max-width: 250px;
+    justify-content:space-between /* o center si quieres centrar el contenido */
+  }
+  
+  .ContactText h3, p{
+    text-align: center;
+  }
+  
+  .NomTel {
+    flex-direction: column;
+  }
+  
+  .Nombre, .Telefono, .Email {
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .form{
+    width:80%;
+  }
+  
+  .QuienSoy {
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+  }
+  
+  .QuienSoy img {
+    margin-top: 1rem;
+  }
+}
+
+
+/* Menú móvil desplegable */
+.mobile-menu {
+  position: fixed;
+  top: 80px;
+  left: -100%;
+  width: max-content;
+  max-width: 80%;  /* Para que no sea demasiado ancho en pantallas muy grandes */
+  height: 100vh;
+  background-color: #62cddb;
+  transition: left 0.3s ease;
+  z-index: 1050;
+  padding: 20px 30px; /* espacio interno para que quede más ancho que el texto */
+  box-sizing: border-box;
+}
+
+.mobile-menu.open {
+  left: 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu li {
+  padding: 15px 25px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.mobile-menu li a {
+  color: white;
+  font-size: 18pt;
+  text-decoration: none;
+}
+
+.mobile-menu li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.mobile-menu li:hover {
+  background-color: #FFD741;
+}
+
+.mobile-menu li:hover a {
+  color: #10717e;
+}
+
+
+/* Para pantallas pequeñas: columna con espacio vertical */
+@media (max-width: 768px) {
+  .ContactDirect {
+    flex-direction: column;
+    gap: 20px; /* espacio vertical cuando están apilados */
+  }
+}
+
+/* Asegúrate de incluir esto para que el footer se quede abajo en páginas cortas */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  
+}
+
+/* Layout principal */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 80px; /* altura del navbar fijo */
+}
+
+/* Contenido principal (Routes) que crece y empuja el footer */
+.page-container > div, /* Por si metes un div que envuelva contenido */
+.page-container > main,
+.page-container > .content,
+.page-container > Routes {
+  flex: 1 0 auto;
+}
+
+/* Contenido que crece para empujar footer */
+.content {
+  flex: 1 0 auto;
 }
