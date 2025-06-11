@@ -17,7 +17,7 @@ const Home = () => {
       </Helmet>
 
       <h1>Soy Tere Malacitana, ¡bienvenido a mi portfolio!</h1>
-      <p className='Intro'> Aquí podrás ver distintas muestras de mi trabajo artístico, tanto de <strong>Pintura Clásica</strong> y <strong>Videojuegos</strong> como ilustración, estando por un lado <strong>Ilustraciones Editoriales</strong>, y por otro las <strong>Ilustraciones Culturales</strong>, en las que incluyo tanto ilustraciones referentes a mi ciudad, Málaga y su cultura, como a la naturaleza entre otras diversas temáticas.</p><br />
+      <p className='Intro'> Aquí podrás ver distintas muestras de mi trabajo artístico, tanto de <strong>Pintura Clásica</strong> y <strong>Videojuegos</strong> como ilustración, estando por un lado <strong>Ilustraciones Editoriales</strong>, y por otro las <strong>Ilustraciones Culturales</strong>, en las que incluyo tanto ilustraciones referentes a mi ciudad, Málaga y su cultura y costumbres.</p><br />
       {/* <Slider /> */}
       <div className='Muestras'>
         {/* <div className='MiniMuestras'>
